@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PREDICTIVE MAINTAINANCE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		#div0 {
+			background-color: rgb(169, 252, 43);
+			width: 100%;
+			height: 50px;
+			position: fixed;
+			top:1px;
+			bottom:auto;
+			right:1px;
+			left:auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#pred {
+			background-color: beige;
+			width: 30%;
+			height: 650px;
+			float: right;
+			position: fixed;
+			top:51px;
+			right:1px;
+		}
+
+		#div2 {
+			background-color: skyblue;
+			width: 69%;
+			height: 650px;
+			position: fixed;
+			top:51px;
+			left:1px;
+		}
+
+		#div3 {
+			background-color: greenyellow;
+			width: 100%;
+			height: 50px;
+			position: fixed;
+			top:auto;
+			bottom:1px;
+			right:1px;
+			left:auto;
+			display: flex;
+			justify-content: right;
+		}
+
+		#id {
+			text-indent: 4em;
+			text-justify: distribute-all-lines;
+		}
+	</style>
+</head>
+<body>
+	<div id="div0">
+		<h1>Predictive Maintainance of Machine</h1>
+	</div>
+	<div id="pred">
+		<h2>Prediction</h2>
+		<form method="POST", action="{{url_for('home')}}">
+			
+			<label for="Type">Type of Finish - </label>
+			<select id="Type" name="Type">
+				<option value="L">L</option>
+				<option value="M">M</option>
+				<option value="H">H</option>
+			</select><br><br>
+	
+			<label for="Air_temperature">Preocess Air Temperature - </label>
+			<input type="any" id="Air_temperature" name="Air_temperature"><br><br>
+	
+			<label for="Rotational_speed">Rotational Speed of Machine - </label>
+			<input type="any" id="Rotational_speed" name="Rotational_speed"><br><br>
+	
+			<label for="Torque">Torque of Machine - </label>
+			<input type="any" id="Torque" name="Torque"><br><br>
+	
+			<label for="Tool_wear">Tool wear - </label>
+			<input type="number" id="Tool_wear" name="Tool_wear"><br><br>
+	
+			<input type="submit" value="Submit">
+		</form>
+		</div>
+	</div>
+	<div id="div2">
+		<h2>Problem Statement</h2>
+		<p id="id">
+			The objective of this project is to develop a predictive maintenance model for CNC or lathe machines using machine learning techniques to reduce downtime and maintenance costs. 
+		</p>
+		<p id="id">
+			The CNC or lathe machine is a critical component of manufacturing and industrial operations and requires regular maintenance to ensure optimal performance. 
+		</p>
+		<p id="id">
+			The primary objective is to predict the maintenance schedule and detect potential failures before they occur using sensor data, maintenance logs, and other relevant information. 
+		</p>
+		<p id="id">
+			The project aims to develop a model that accurately predicts the maintenance schedule, reducing the unplanned downtime, optimizing maintenance scheduling, and extending the lifespan of the CNC or lathe machine. 
+		</p>
+		<p id="id">
+			The project will require developing, training, and testing the machine learning model using appropriate data sets, ensuring accuracy, and building a user-friendly interface for easy accessibility of the maintenance schedule. 
+		</p>
+		<p id="id">
+			The successful completion of this project will help manufacturing and industrial operations reduce their maintenance costs, improve their operational efficiency, and provide a better return on investment.
+		</p>
+	</div>
+	<div id="div3">
+		<h5>- Project by Shekhar Katkar. </h5>
+	</div>
+</body>
+</html>
